@@ -1,0 +1,8 @@
+<h1>Tell me about this new car</h1>
+  <%= simple_form_for :quiz, url: :quizs do |f| %>
+    <%= f.input :make %>
+    <%= f.input :model %>
+    <%= f.input :seats %>
+    <br/>
+    <%= f.submit 'Create', class: 'btn btn-primary' %>
+  <% end %>
